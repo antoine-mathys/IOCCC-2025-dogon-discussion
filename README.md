@@ -111,7 +111,7 @@ We can make the code clearer now.
 #define B 100000
 #define N 8192
 
-int e[N + 1] = { 0, 1 };
+int e[N + 1];
 int f[N + 1];
 
 int main()
@@ -122,6 +122,7 @@ int main()
 
     printf("   2.");
 
+    e[1] = 1;
     f[0] = 1;
 
     while (i < N) {
